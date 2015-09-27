@@ -11,9 +11,9 @@
         <h3>Visual studio setup</h3>
         <p class="text-justify">
             I used visual studio 2012 with update 4 installed.  I also installed “Chutzpah test
-    runner context menu extensions” and “Chutzpah test adaptor for test explorer”. 
-    This allows client side tests to be run in visual studio and provided you have update 4, 
-    it will also add them to the test runner.
+            runner context menu extensions” and “Chutzpah test adaptor for test explorer”. 
+            This allows client side tests to be run in visual studio and provided you have update 4, 
+            it will also add them to the test runner.
         </p>
         <h3>Configuration</h3>
         <p class="text-justify">
@@ -27,10 +27,10 @@
         <h4>Javascript</h4>
         <p class="text-justify">
             The client side javascript code is split over six modules.  Each module uses the revealing module pattern.
-     This pattern uses a self-executing function which returns an object.  The object exports the public
-     members of the module.  Members in the function which are not returned are like private members
-     in a classical language.  This pattern keeps the number of objects in the global namespace
-     (i.e. on the window object in a browser) low.  The modules are        
+             This pattern uses a self-executing function which returns an object.  The object exports the public
+             members of the module.  Members in the function which are not returned are like private members
+             in a classical language.  This pattern keeps the number of objects in the global namespace
+             (i.e. on the window object in a browser) low.  The modules are        
         </p>
         <ul>
             <li>calculationsEngine – this provides all of the probability calculations.</li>
@@ -40,7 +40,7 @@
             <li>ajaxCalls – similar to the DOM module, ajax calls contains no logic and so does not need to be unit tested.</li>
             <li>mainCalculationsPage – a page specific module that wires up event handlers and sets the initial state of the main calculation page.</li>
         </ul>
-
+        <p>Since this is a small project, a client side framework would be overkill.  Instead Jquery is used for DOM manipulation and Ajax, if needed this could be easily removed as well e.g. for low powered devices on slow networks</p>
         <h4>Html</h4>
         <p class="text-justify">The html for the app could be written as completely static .html files.  For simplicity they have been written as htmlcs files and are served by asp mvc.  For production however it would be better to use simple .html files and have IIS serve them directly (or use a standalone server and proxy the dynamic calls to IIS)</p>
 
@@ -70,5 +70,8 @@
         <p>IClock – a stub created using the MOQ library configured to return a specific date</p>
         <p>Stream – MemoryStream (.Net class which allows reading and writing to memory without creating physical files)</p>
 
+        <h4>Front end tests</h4>
+        <p>Front end tests use Selenium Webdriver to simulate a user interacting with the app through a web browser.  Only a small number of UI tests have been included, a full app would have a larger set that would test all success and error routes.</p>
+        <p>To allow for easy cross browser testing, the tests have been put in an abstract base class.  Then a concrete implementation which inherits the base class is used for each browser.  For simplicity only Firefox is included, because that does not require external platform specific drivers.  Adding new classes for Chrome, I.E. etc would allow all the tests to run on all of the browsers without having to copy paste the tests.</p>
     </div>
 </div>
