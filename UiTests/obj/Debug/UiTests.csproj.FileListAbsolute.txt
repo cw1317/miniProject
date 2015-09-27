@@ -1,0 +1,7 @@
+C:\Users\w123\documents\visual studio 2012\Projects\Redington\UiTests\bin\Debug\UiTests.dll
+C:\Users\w123\documents\visual studio 2012\Projects\Redington\UiTests\bin\Debug\UiTests.pdb
+C:\Users\w123\documents\visual studio 2012\Projects\Redington\UiTests\bin\Debug\WebDriver.dll
+C:\Users\w123\documents\visual studio 2012\Projects\Redington\UiTests\bin\Debug\WebDriver.xml
+C:\Users\w123\documents\visual studio 2012\Projects\Redington\UiTests\obj\Debug\UiTests.csprojResolveAssemblyReference.cache
+C:\Users\w123\documents\visual studio 2012\Projects\Redington\UiTests\obj\Debug\UiTests.dll
+C:\Users\w123\documents\visual studio 2012\Projects\Redington\UiTests\obj\Debug\UiTests.pdb

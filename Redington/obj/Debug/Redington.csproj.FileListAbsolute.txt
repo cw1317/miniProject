@@ -1,0 +1,40 @@
+c:\users\w123\documents\visual studio 2012\Projects\Redington\Redington\bin\Redington.dll
+c:\users\w123\documents\visual studio 2012\Projects\Redington\Redington\bin\Redington.pdb
+c:\users\w123\documents\visual studio 2012\Projects\Redington\Redington\bin\Microsoft.Web.Infrastructure.dll
+c:\users\w123\documents\visual studio 2012\Projects\Redington\Redington\bin\Newtonsoft.Json.dll
+c:\users\w123\documents\visual studio 2012\Projects\Redington\Redington\bin\System.Web.Helpers.dll
+c:\users\w123\documents\visual studio 2012\Projects\Redington\Redington\bin\System.Web.Mvc.dll
+c:\users\w123\documents\visual studio 2012\Projects\Redington\Redington\bin\System.Web.Razor.dll
+c:\users\w123\documents\visual studio 2012\Projects\Redington\Redington\bin\System.Web.WebPages.Deployment.dll
+c:\users\w123\documents\visual studio 2012\Projects\Redington\Redington\bin\System.Web.WebPages.dll
+c:\users\w123\documents\visual studio 2012\Projects\Redington\Redington\bin\System.Web.WebPages.Razor.dll
+c:\users\w123\documents\visual studio 2012\Projects\Redington\Redington\bin\Newtonsoft.Json.xml
+c:\users\w123\documents\visual studio 2012\Projects\Redington\Redington\bin\System.Web.Helpers.xml
+c:\users\w123\documents\visual studio 2012\Projects\Redington\Redington\bin\System.Web.Mvc.xml
+c:\users\w123\documents\visual studio 2012\Projects\Redington\Redington\bin\System.Web.Razor.xml
+c:\users\w123\documents\visual studio 2012\Projects\Redington\Redington\bin\System.Web.WebPages.xml
+c:\users\w123\documents\visual studio 2012\Projects\Redington\Redington\bin\System.Web.WebPages.Deployment.xml
+c:\users\w123\documents\visual studio 2012\Projects\Redington\Redington\bin\System.Web.WebPages.Razor.xml
+c:\users\w123\documents\visual studio 2012\Projects\Redington\Redington\obj\Debug\Redington.dll
+c:\users\w123\documents\visual studio 2012\Projects\Redington\Redington\obj\Debug\Redington.pdb
+C:\Users\w123\documents\visual studio 2012\Projects\Redington\Redington\obj\Debug\Redington.csprojResolveAssemblyReference.cache
+C:\Users\w123\Desktop\miniproject\Redington\bin\Redington.dll
+C:\Users\w123\Desktop\miniproject\Redington\bin\Redington.pdb
+C:\Users\w123\Desktop\miniproject\Redington\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\w123\Desktop\miniproject\Redington\bin\Newtonsoft.Json.dll
+C:\Users\w123\Desktop\miniproject\Redington\bin\System.Web.Helpers.dll
+C:\Users\w123\Desktop\miniproject\Redington\bin\System.Web.Mvc.dll
+C:\Users\w123\Desktop\miniproject\Redington\bin\System.Web.Razor.dll
+C:\Users\w123\Desktop\miniproject\Redington\bin\System.Web.WebPages.Deployment.dll
+C:\Users\w123\Desktop\miniproject\Redington\bin\System.Web.WebPages.dll
+C:\Users\w123\Desktop\miniproject\Redington\bin\System.Web.WebPages.Razor.dll
+C:\Users\w123\Desktop\miniproject\Redington\bin\Newtonsoft.Json.xml
+C:\Users\w123\Desktop\miniproject\Redington\bin\System.Web.Helpers.xml
+C:\Users\w123\Desktop\miniproject\Redington\bin\System.Web.Mvc.xml
+C:\Users\w123\Desktop\miniproject\Redington\bin\System.Web.Razor.xml
+C:\Users\w123\Desktop\miniproject\Redington\bin\System.Web.WebPages.xml
+C:\Users\w123\Desktop\miniproject\Redington\bin\System.Web.WebPages.Deployment.xml
+C:\Users\w123\Desktop\miniproject\Redington\bin\System.Web.WebPages.Razor.xml
+C:\Users\w123\Desktop\miniproject\Redington\obj\Debug\Redington.csprojResolveAssemblyReference.cache
+C:\Users\w123\Desktop\miniproject\Redington\obj\Debug\Redington.dll
+C:\Users\w123\Desktop\miniproject\Redington\obj\Debug\Redington.pdb

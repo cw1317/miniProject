@@ -1,0 +1,74 @@
+﻿@{Layout = "~/Views/Shared/_Layout.cshtml";}
+@section Scripts{}
+@{
+    ViewBag.Title = "About";
+}
+
+<div class="container-fluid">
+    <div class="col-md-8 col-md-offset-2">
+        <h2>About</h2>
+
+        <h3>Visual studio setup</h3>
+        <p class="text-justify">
+            I used visual studio 2012 with update 4 installed.  I also installed “Chutzpah test
+    runner context menu extensions” and “Chutzpah test adaptor for test explorer”. 
+    This allows client side tests to be run in visual studio and provided you have update 4, 
+    it will also add them to the test runner.
+        </p>
+        <h3>Configuration</h3>
+        <p class="text-justify">
+            The Redington project contains an ASP MVC project.  This should be setup in visual studio to use IIS express, this will make it run as the currently logged in user and give it access to the home directory (users/&ltuser&gt on Windows 7 or later),
+            which is the default location for logs.
+            You can override the default location by adding an app setting called “logPath” to Web.config.
+            To run the selenium tests, you need to ensure that the website is running on port 56982.  Or you can change the port in “UiTests/BaseTests”, either way you will want to fix the port so it doesn’t change each time the website is run.
+        </p>
+
+        <h3>Client side architechture</h3>
+        <h4>Javascript</h4>
+        <p class="text-justify">
+            The client side javascript code is split over six modules.  Each module uses the revealing module pattern.
+     This pattern uses a self-executing function which returns an object.  The object exports the public
+     members of the module.  Members in the function which are not returned are like private members
+     in a classical language.  This pattern keeps the number of objects in the global namespace
+     (i.e. on the window object in a browser) low.  The modules are        
+        </p>
+        <ul>
+            <li>calculationsEngine – this provides all of the probability calculations.</li>
+            <li>validators – provides validation functions.</li>
+            <li>pageEvents – the business logic associated with events.</li>
+            <li>domInteractions – all interaction with the DOM (including event handlers) is done in a single module which has no logic.  Since it contains no logic is does not need to be unit tested, this makes unit testing of the other modules easier.  Unit testing DOM interaction is difficult because the chain of function calls can be quite deep.</li>
+            <li>ajaxCalls – similar to the DOM module, ajax calls contains no logic and so does not need to be unit tested.</li>
+            <li>mainCalculationsPage – a page specific module that wires up event handlers and sets the initial state of the main calculation page.</li>
+        </ul>
+
+        <h4>Html</h4>
+        <p class="text-justify">The html for the app could be written as completely static .html files.  For simplicity they have been written as htmlcs files and are served by asp mvc.  For production however it would be better to use simple .html files and have IIS serve them directly (or use a standalone server and proxy the dynamic calls to IIS)</p>
+
+        <h4>CSS</h4>
+        <p>The bootstrap CSS framework is used.  This framework produces good looking websites with little configuration required.  For simplicity the entire framework is served by a CDN.  Bootstrap can be customised so that only the parts you use are included.  The downside of this approach is you would not be able to use a CDN and so would lose the possible caching benefits of a CDN and use up more of your own bandwidth.  The advantage is the download will be smaller.</p>
+        <p>To keep things quick, bootstrap was used pretty much out of the box, with one of the default themes.  This produces a good responsive website quickly, but looks like every other bootstrap website.  A production app should personalise bootstrap to make their site look unique.</p>
+
+        <h4>Unit tests</h4>
+        <p class="text-justify">Client side unit tests are contained in the project “ClientSideUnitTests”.  It is generally a good idea to keep different types of tests in separate projects, quick unit tests should be separate to slow integration tests.  This allows them to be run independently, though this is less important since Visual studio update 1 which allowed traits to be used instead.</p>
+        <p class="text-justify">There is a set of unit tests for each module which contains logic i.e. pageEvents, calculationsEngine and validators.</p>
+        <p class="text-justify">Each module is tested independently of each other, all references from one module to another are fake objects.  This means when a unit test fails it is immediately clear where the bug is located.  To create the fake objects we use sinon mocks.  The fake objects are created as stubs and then a spy is added using sinon.  This approach is purely a personal preference, using sinon to create mock objects which can record their own behaviour is an equally valid approach.</p>
+        <p class="text-justify">The test framework chosen is mocha and the assertion library is chai.  Dependencies are created my adding the mock module to the global namespace.  This is a slightly hacky way of doing this and it would probably be better to setup dependency injection, with such a small number of modules however this approach does not become too messy.  To make it obvious where this is happen I have explicitly created the module on the window object.  This makes it clear to anyone looking at the test who might otherwise think that the var keyword has been left out by mistake.</p>
+
+        <h3>Server side architecture</h3>
+        <h4>Dependency injection</h4>
+        <p>To allow the serverside code to be unit tested, the asp mvc framework is slightly modified to allow dependencies to be injected into the controllers through their constructors.  Specifically a new controller factory is created, this simply inherits the default controller factory but overrides the function which gets the controller object for each http request.  The new factory is registered in Global.asax.</p>
+        <p>In a larger app, a dependency injection framework like Castle Windsor or Spring .Net could be used to simplify the creation of dependencies, manage the lifetimes and enable lazy loading.  For this simple app which only has one controller with external dependencies it is much simpler to construct the controller directly in the controller factory.</p>
+        <p>The dependency chart for the TransactionRecorderController looks like</p>
+        <img src="~/img/dependencyStack.png" />
+        <p>The controller requires ILogger which provides an interface to log the calculations performed by the user.  In turn the logger needs a stream to write to and a clock to provide the current time.  In all cases the dependency is an interface or an abstract base class.  An abstraction around Datetime.Now is needed so that we can fake the current time in unit tests.</p>
+        <p>The concrete implementations in the production code are</p>
+        <p>ILogger – Logger (custom class that writes out csv to a stream)</p>
+        <p>IClock – Clock (custom class that provide the real current time)</p>
+        <p>Stream – FileStream (.Net class which allows reading and writing to physical files)</p>
+        <p>In unit testing the following implementations are used instead</p>
+        <p>ILogger – a mock created using the MOQ library, we use mock.verify to check it has been called the expected number of times and with the expected parameters.</p>
+        <p>IClock – a stub created using the MOQ library configured to return a specific date</p>
+        <p>Stream – MemoryStream (.Net class which allows reading and writing to memory without creating physical files)</p>
+
+    </div>
+</div>

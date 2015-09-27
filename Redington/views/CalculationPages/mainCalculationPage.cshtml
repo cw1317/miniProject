@@ -1,0 +1,60 @@
+﻿@{Layout = "~/Views/Shared/_Layout.cshtml";}
+
+@section Scripts
+{
+    <script src="@Url.Content("~/js/mainCalculationPage.js")"></script>
+    <script src="@Url.Content("~/js/pageEvents.js")"></script>
+    <script src="@Url.Content("~/js/validators.js")"></script>
+    <script src="@Url.Content("~/js/domInteractions.js")"></script>
+    <script src="@Url.Content("~/js/calculationsEngine.js")"></script>
+    <script src="@Url.Content("~/js/ajaxCalls.js")"></script>
+    <link href="~/css/validation.css" rel="stylesheet" />
+}
+
+@{
+    ViewBag.Title = "Probability Calculator";
+}
+
+<div class="container-fluid">
+    <div class="col-md-5">
+        <form id="calculatorForm">
+            <h2>Probability Calculator</h2>
+            This calculator allows you to enter the probability to two independent events.  It can then
+            calculate the probabilty of BOTH events occuring or EITHER event occuring.
+            <br />
+            <br />
+            A probabilty can range from 0 (impossible) to 1 (certain)
+            <br />
+            <br />
+            <div class="form-group">
+                <label for="firstProbability">Probability of event 1</label>
+                <input type="text" class="form-control" placeholder="probability 0.0 - 1.0" id="firstProbability" />
+            </div>
+            <div class="form-group">
+                <label for="secondProbability">Probability of event 2</label>
+                <input type="text" class="form-control" placeholder="probability 0.0 - 1.0" id="secondProbability" />
+            </div>
+            <div id="validationError" class="errorMessage">
+                Please enter two valid probabilities
+            </div>
+            <button class="btn btn-primary" id="calulateBothProbability">Probability of Both</button>
+            <button class="btn btn-primary" id="calulateEitherProbability">Probability of either</button>    
+        </form>
+        
+        <div id="answerScreen">
+            <div class="row">
+                <h4>If the probability of the first event occuring is <span id="answerProbabilityOne" ></span></h4>
+            </div>
+             <div class="row">
+                <h4>and the probability of the second event occuring is <span id="answerProbabilityTwo"></span></h4>
+            </div>
+            <div class="row">
+                <h4>Then the probability of <span id="answerOperation"></span> events occuring is <span id="answerCombinedProbability"></span></h4>
+            </div>
+            <br />
+            <div class="row">
+                <button class="btn btn-primary" id="anotherCalulation">Do another calculation</button>
+            </div>
+        </div>
+    </div>
+ </div>

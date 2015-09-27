@@ -1,0 +1,18 @@
+C:\Users\w123\documents\visual studio 2012\Projects\Redington\ServerSideUnitTests\obj\Debug\ServerSideUnitTests.csprojResolveAssemblyReference.cache
+C:\Users\w123\documents\visual studio 2012\Projects\Redington\ServerSideUnitTests\bin\Debug\ServerSideUnitTests.dll
+C:\Users\w123\documents\visual studio 2012\Projects\Redington\ServerSideUnitTests\bin\Debug\ServerSideUnitTests.pdb
+C:\Users\w123\documents\visual studio 2012\Projects\Redington\ServerSideUnitTests\bin\Debug\Redington.dll
+C:\Users\w123\documents\visual studio 2012\Projects\Redington\ServerSideUnitTests\bin\Debug\Redington.pdb
+C:\Users\w123\documents\visual studio 2012\Projects\Redington\ServerSideUnitTests\obj\Debug\ServerSideUnitTests.dll
+C:\Users\w123\documents\visual studio 2012\Projects\Redington\ServerSideUnitTests\obj\Debug\ServerSideUnitTests.pdb
+C:\Users\w123\documents\visual studio 2012\Projects\Redington\ServerSideUnitTests\bin\Debug\Moq.dll
+C:\Users\w123\documents\visual studio 2012\Projects\Redington\ServerSideUnitTests\bin\Debug\Moq.xml
+C:\Users\w123\Desktop\miniproject\ServerSideUnitTests\bin\Debug\ServerSideUnitTests.dll
+C:\Users\w123\Desktop\miniproject\ServerSideUnitTests\bin\Debug\ServerSideUnitTests.pdb
+C:\Users\w123\Desktop\miniproject\ServerSideUnitTests\bin\Debug\Moq.dll
+C:\Users\w123\Desktop\miniproject\ServerSideUnitTests\bin\Debug\Redington.dll
+C:\Users\w123\Desktop\miniproject\ServerSideUnitTests\bin\Debug\Redington.pdb
+C:\Users\w123\Desktop\miniproject\ServerSideUnitTests\bin\Debug\Moq.xml
+C:\Users\w123\Desktop\miniproject\ServerSideUnitTests\obj\Debug\ServerSideUnitTests.csprojResolveAssemblyReference.cache
+C:\Users\w123\Desktop\miniproject\ServerSideUnitTests\obj\Debug\ServerSideUnitTests.dll
+C:\Users\w123\Desktop\miniproject\ServerSideUnitTests\obj\Debug\ServerSideUnitTests.pdb

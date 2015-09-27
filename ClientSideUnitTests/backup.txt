@@ -1,0 +1,28 @@
+﻿ describe('when value is valid', function () {
+            validators = {
+                isValidProbability: function () {
+                    return true;
+                },
+                validateWholeForm: function () { }
+            },
+            domInteractions = {
+                getElementById: function () {
+                    return {
+                        val: function () { }
+                    }
+                }
+            }
+           
+            it('should remove error class', function () {
+                //pageEvents.onInputProbabilityChange(mockElement);
+                //console.log(mockElement.removeClass.getCall(0).args[0]);
+                //chai.assert.equal(mockElement.removeClass.getCall(0).args[0], 'error');
+                //chai.assert.equal(methodCalls[0].name, 'mockElement.removeClass');
+            });
+            it('should call getElementById with "firstProbability"', function () {
+             //   chai.assert.equal(methodCalls[1].name, 'domInteractions.getElementById');
+            });
+            it('should call getElementById with "secondProbability"', function () {
+              //  chai.assert.equal(methodCalls[2].name, 'domInteractions.getElementById');
+            });
+        });

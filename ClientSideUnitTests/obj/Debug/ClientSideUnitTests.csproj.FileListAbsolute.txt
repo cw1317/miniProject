@@ -1,0 +1,12 @@
+C:\Users\w123\documents\visual studio 2012\Projects\Redington\ClientSideUnitTests\obj\Debug\ClientSideUnitTests.csprojResolveAssemblyReference.cache
+C:\Users\w123\documents\visual studio 2012\Projects\Redington\ClientSideUnitTests\bin\Debug\ClientSideUnitTests.dll.config
+C:\Users\w123\documents\visual studio 2012\Projects\Redington\ClientSideUnitTests\bin\Debug\ClientSideUnitTests.dll
+C:\Users\w123\documents\visual studio 2012\Projects\Redington\ClientSideUnitTests\bin\Debug\ClientSideUnitTests.pdb
+C:\Users\w123\documents\visual studio 2012\Projects\Redington\ClientSideUnitTests\obj\Debug\ClientSideUnitTests.dll
+C:\Users\w123\documents\visual studio 2012\Projects\Redington\ClientSideUnitTests\obj\Debug\ClientSideUnitTests.pdb
+C:\Users\w123\Desktop\miniproject\ClientSideUnitTests\bin\Debug\ClientSideUnitTests.dll.config
+C:\Users\w123\Desktop\miniproject\ClientSideUnitTests\bin\Debug\ClientSideUnitTests.dll
+C:\Users\w123\Desktop\miniproject\ClientSideUnitTests\bin\Debug\ClientSideUnitTests.pdb
+C:\Users\w123\Desktop\miniproject\ClientSideUnitTests\obj\Debug\ClientSideUnitTests.csprojResolveAssemblyReference.cache
+C:\Users\w123\Desktop\miniproject\ClientSideUnitTests\obj\Debug\ClientSideUnitTests.dll
+C:\Users\w123\Desktop\miniproject\ClientSideUnitTests\obj\Debug\ClientSideUnitTests.pdb
